@@ -15,3 +15,6 @@ export const ibanToBank = (iban: string): T.Entry => {
 };
 
 export const ibanToBic = (iban: string): string => ibanToBank(iban).bic;
+
+export const banksByZip = (zip: string): T.Entry[] =>
+  data.entries.filter((x) => x.zipCode === zip);

@@ -49,11 +49,22 @@ describe("iban to bic", () => {
     expect(bic).toEqual(bicExpected);
   });
 
+  test("bank gantrisch", () => {
+    const iban = "CH1908518016000520000";
+    const bicExpected = "BGAGCH22XXX";
+
+    const bic = I.ibanToBic(iban);
+
+    expect(bic).toEqual(bicExpected);
+  });
+
+  //
+
   test("revolut (will fail)", () => {
     const iban = "GB18REVO00996957269991";
 
     try {
-      const bic = I.ibanToBic(iban);
+      I.ibanToBic(iban);
     } catch (err) {
       expect(err.message).toEqual("no bank could be found");
     }
