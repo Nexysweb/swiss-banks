@@ -1,5 +1,7 @@
 # Readme
 
+![Test Package](https://github.com/Nexysweb/swiss-banks/workflows/Test%20Package/badge.svg)
+
 ## Data
 
 https://api.six-group.com/api/epcd/bankmaster/v2/public
