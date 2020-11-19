@@ -1,8 +1,11 @@
 {
-  "name": "swiss-banks",
+  "name": "@nexys/swiss-banks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^26.0.15",
