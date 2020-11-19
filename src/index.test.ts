@@ -39,4 +39,13 @@ describe("iban to bic", () => {
 
     expect(bic).toEqual(bicExpected);
   });
+
+  test("raiffeisen", () => {
+    const iban = "CH5680442000053333543";
+    const bicExpected = "RAIFCH22442";
+
+    const bic = I.ibanToBic(iban);
+
+    expect(bic).toEqual(bicExpected);
+  });
 });
