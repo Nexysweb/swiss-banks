@@ -48,4 +48,14 @@ describe("iban to bic", () => {
 
     expect(bic).toEqual(bicExpected);
   });
+
+  test("revolut (will fail)", () => {
+    const iban = "GB18REVO00996957269991";
+
+    try {
+      const bic = I.ibanToBic(iban);
+    } catch (err) {
+      expect(err.message).toEqual("no bank could be found");
+    }
+  });
 });
