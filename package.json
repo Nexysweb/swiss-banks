@@ -19,5 +19,6 @@
     "build": "tsc"
   },
   "author": "Nexys Sarl",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/Nexysweb/swiss-banks"
 }
