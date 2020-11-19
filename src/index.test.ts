@@ -1,5 +1,10 @@
 import * as I from "./index";
 
+test("iban to bic", () => {
+  const iban = "CH38002282211339301G";
+  expect(I.ibanToIid(iban)).toEqual(228);
+});
+
 describe("iban to bic", () => {
   test("UBS", () => {
     const iban = "CH38002282211339301G";
